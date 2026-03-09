@@ -1,4 +1,3 @@
-
 import {Component} from 'react'
 import Cookies from 'js-cookie'
 import Loader from 'react-loader-spinner'
@@ -208,7 +207,7 @@ class MovieDetailSection extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="movie-detail-loader-container" testid="loader">
+    <div className="movie-detail-loader-container" data-testid="loader">
       <Loader type="TailSpin" color="#D81F26" height={50} width={50} />
     </div>
   )
